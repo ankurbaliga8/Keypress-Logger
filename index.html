@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KeyPress Logger</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      #log,
+      #state {
+        margin-right: 10px;
+        margin-left: 10px;
+        width: 300px;
+        height: 200px;
+        border: 2px solid black;
+        font-size: 20px;
+        padding: 10px;
+        margin-top: 20px;
+        border-radius: 10px;
+        text-align: center;
+        background-color: yellow;
+      }
+      .button-container {
+        display: flex;
+        flex-direction: row;
+      }
+
+      button {
+        font-size: 20px;
+        padding: 10px 20px;
+        margin-top: 20px;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 style="border: 2px solid black; padding: 2px; border-radius: 10px">
+        Key Logger
+      </h1>
+      <p>I know what are you currently pressing ;)</p>
+      <div class="button-container">
+        <button id="start">Start Logging KeyPresses</button>
+        <button id="stop">Stop Logging KeyPresses</button>
+      </div>
+      <div class="button-container">
+        <div id="log"></div>
+        <div id="state"></div>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
